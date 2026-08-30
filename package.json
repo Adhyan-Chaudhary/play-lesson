@@ -9,7 +9,7 @@
   "files": ["bin", "src", "runtime", "templates", "agent", "README.md"],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Adhyan-Chaudhary/play-lesson.git"
+    "url": "git+https://github.com/Adhyan-Chaudhary/play-lesson.git"
   },
   "keywords": ["lesson", "interactive", "narration", "captions", "esbuild", "teaching"],
   "author": "Puru Kathuria <puru@lexailabs.com>",

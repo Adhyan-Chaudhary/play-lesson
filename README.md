@@ -72,17 +72,18 @@ Installing a Linux Chrome instead also works and skips all of that.
 ### 2. Install the CLI
 
 ```bash
-git clone git@github.com:Adhyan-Chaudhary/play-lesson.git
-npm i -g ./play-lesson
+npm i -g github:Adhyan-Chaudhary/play-lesson
 ```
 
-Or straight from GitHub, no clone:
+That is the whole install — no clone, no keys. To work on the CLI itself,
+clone it and link instead:
 
 ```bash
-npm i -g git+ssh://git@github.com/Adhyan-Chaudhary/play-lesson.git
+git clone https://github.com/Adhyan-Chaudhary/play-lesson.git
+cd play-lesson && npm install && npm link
 ```
 
-Or from a tarball, if the machine has no GitHub access:
+Or from a tarball, if the machine has no GitHub access at all:
 
 ```bash
 npm pack                     # in a clone — writes play-lesson-0.1.0.tgz
