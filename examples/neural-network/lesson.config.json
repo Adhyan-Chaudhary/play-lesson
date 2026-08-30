@@ -1,0 +1,41 @@
+{
+  "slug": "neural-network",
+  "title": "How a neural network decides — interactive",
+  "handsOnLabel": "HANDS-ON",
+  "voice": {
+    "provider": "edge",
+    "name": "en-US-AndrewNeural",
+    "rate": "+0%"
+  },
+  "assets": [],
+  "chapters": [
+    { "short": "One neuron", "full": "A neuron is a weighted sum and a squash" },
+    { "short": "A layer", "full": "Four neurons reading the same three inputs" },
+    { "short": "Forward pass", "full": "Pushing signal from input to output" },
+    { "short": "Training", "full": "What training actually changes" }
+  ],
+  "beats": [
+    { "id": "01a-one-neuron", "chapter": 0, "interactive": null },
+    { "id": "02a-a-layer", "chapter": 1, "interactive": null },
+    {
+      "id": "02b-tune-a-weight",
+      "chapter": 1,
+      "interactive": {
+        "kind": "weight",
+        "title": "Make B win by moving one number",
+        "hint": "Drag w₃₁ and watch both outputs move."
+      }
+    },
+    { "id": "03a-forward-pass", "chapter": 2, "interactive": null },
+    {
+      "id": "03b-make-it-fire",
+      "chapter": 2,
+      "interactive": {
+        "kind": "classify",
+        "title": "Now make B win without touching a weight",
+        "hint": "Only the three inputs are yours this time."
+      }
+    },
+    { "id": "04a-training", "chapter": 3, "interactive": null }
+  ]
+}

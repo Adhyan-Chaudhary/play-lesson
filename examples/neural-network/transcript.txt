@@ -1,0 +1,45 @@
+Narration for the neural-network example. One "## <beat-id>" per beat, ids
+matching lesson.config.json exactly.
+
+Written for the ear: short sentences, one idea each. The caption band shows a
+line at a time, so a sentence past about twenty-five words gets split somewhere
+you did not choose.
+
+## 01a-one-neuron
+
+Here is a single neuron. Three numbers come in from the left. Each one is
+multiplied by a weight, and the results are added together. That sum is then
+squashed into a value between zero and one. That is the entire neuron. There is
+no other machinery hiding underneath it.
+
+## 02a-a-layer
+
+Now watch the same picture pull back. There is not one neuron here, there are
+four. Every one of them reads the same three inputs. What makes them different
+is not what they see. It is the weights they see it through.
+
+## 02b-tune-a-weight
+
+Each of those edges carries a number, and that number is the only thing
+separating one neuron from another. So let us find out what happens when you
+change one. Take a single weight, and move it.
+
+## 03a-forward-pass
+
+That is a forward pass. Numbers enter on the left, get multiplied and summed at
+every edge, and a value falls out on the right. Watch the signal travel. Nothing
+about this is metaphorical, that is literally the order the arithmetic happens
+in.
+
+## 03b-make-it-fire
+
+Right now, output A is winning. But you just changed the answer by moving a
+weight, and weights are not the only thing that decides an output. The inputs
+decide it too. So this time, leave every weight exactly where it is.
+
+## 04a-training
+
+So what does training do? It does not add neurons. It does not rewrite the
+arithmetic. It only nudges the numbers on those edges, over and over, until the
+outputs stop being wrong. Everything you just did by hand, training does by
+gradient.

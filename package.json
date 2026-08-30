@@ -3,15 +3,38 @@
   "version": "0.1.0",
   "description": "Build narrated, interactive lessons: beats + scenes + interactives become one self-contained page.",
   "type": "module",
-  "bin": { "play-lesson": "bin/play-lesson.mjs" },
-  "engines": { "node": ">=18.17" },
-  "os": ["darwin", "linux", "win32"],
-  "files": ["bin", "src", "runtime", "templates", "agent", "README.md"],
+  "bin": {
+    "play-lesson": "bin/play-lesson.mjs"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "runtime",
+    "templates",
+    "examples",
+    "agent",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Adhyan-Chaudhary/play-lesson.git"
   },
-  "keywords": ["lesson", "interactive", "narration", "captions", "esbuild", "teaching"],
+  "keywords": [
+    "lesson",
+    "interactive",
+    "narration",
+    "captions",
+    "esbuild",
+    "teaching"
+  ],
   "author": "Puru Kathuria <puru@lexailabs.com>",
   "license": "UNLICENSED",
   "scripts": {

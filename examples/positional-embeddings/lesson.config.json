@@ -1,0 +1,179 @@
+{
+  "slug": "positional-embeddings",
+  "title": "Positional embeddings — interactive",
+  "handsOnLabel": "HANDS-ON",
+  "voice": {
+    "provider": "edge",
+    "name": "en-US-AndrewNeural",
+    "rate": "+0%"
+  },
+  "assets": [],
+  "chapters": [
+    {
+      "short": "Where we are",
+      "full": "About to invent attention"
+    },
+    {
+      "short": "Embedding vector",
+      "full": "What is an embedding vector?"
+    },
+    {
+      "short": "Attention is blind",
+      "full": "The problem: attention is blind to order"
+    },
+    {
+      "short": "Continuous place",
+      "full": "Not token IDs, continuous vectors for place"
+    },
+    {
+      "short": "What it is not",
+      "full": "What positional encodings are not"
+    },
+    {
+      "short": "The fusion",
+      "full": "The fusion step: add, then attend"
+    },
+    {
+      "short": "Sinusoidal",
+      "full": "Sinusoidal positional encoding"
+    },
+    {
+      "short": "Learned",
+      "full": "Learned positional embeddings"
+    },
+    {
+      "short": "Why addition",
+      "full": "Why addition, not concatenation"
+    },
+    {
+      "short": "Takeaway",
+      "full": "Takeaway"
+    }
+  ],
+  "beats": [
+    {
+      "id": "01a-where-we-are",
+      "chapter": 0,
+      "interactive": null
+    },
+    {
+      "id": "02a-definition",
+      "chapter": 1,
+      "interactive": null
+    },
+    {
+      "id": "02b-onehot-is-lookup",
+      "chapter": 1,
+      "interactive": {
+        "kind": "lookup",
+        "title": "Read row 312 the expensive way",
+        "hint": "Drag the 1 down the column and watch which row falls out."
+      }
+    },
+    {
+      "id": "02c-why-not-onehot",
+      "chapter": 1,
+      "interactive": null
+    },
+    {
+      "id": "02d-scarcity-and-training",
+      "chapter": 1,
+      "interactive": null
+    },
+    {
+      "id": "02e-shapes",
+      "chapter": 1,
+      "interactive": null
+    },
+    {
+      "id": "03a-blind-challenge",
+      "chapter": 2,
+      "interactive": {
+        "kind": "reorder",
+        "title": "Make 'cat' attend to something else — by reordering only",
+        "hint": "Drag the words into any order you like."
+      }
+    },
+    {
+      "id": "03b-blind-payoff",
+      "chapter": 2,
+      "interactive": null
+    },
+    {
+      "id": "04a-why-not-integers",
+      "chapter": 3,
+      "interactive": null
+    },
+    {
+      "id": "04b-the-requirement",
+      "chapter": 3,
+      "interactive": {
+        "kind": "shift",
+        "title": "Invent a code where one fixed matrix shifts any position by k",
+        "hint": "Try the raw integer. Try a random vector per position."
+      }
+    },
+    {
+      "id": "05a-what-its-not",
+      "chapter": 4,
+      "interactive": null
+    },
+    {
+      "id": "06a-add",
+      "chapter": 5,
+      "interactive": null
+    },
+    {
+      "id": "06b-does-it-corrupt",
+      "chapter": 5,
+      "interactive": {
+        "kind": "dims",
+        "title": "Add position without wrecking meaning",
+        "hint": "Drag d and watch the cosine between x and p."
+      }
+    },
+    {
+      "id": "06c-payoff",
+      "chapter": 5,
+      "interactive": null
+    },
+    {
+      "id": "07a-the-clocks",
+      "chapter": 6,
+      "interactive": {
+        "kind": "clocks",
+        "title": "Read the position off the clocks",
+        "hint": "Drag the position. Every hand turns at its own rate."
+      }
+    },
+    {
+      "id": "07b-why-pairs",
+      "chapter": 6,
+      "interactive": null
+    },
+    {
+      "id": "07c-relative",
+      "chapter": 6,
+      "interactive": {
+        "kind": "gap",
+        "title": "Keep the gap, break the readout",
+        "hint": "Move both markers anywhere. Only the gap is allowed to stay fixed."
+      }
+    },
+    {
+      "id": "08a-learned",
+      "chapter": 7,
+      "interactive": null
+    },
+    {
+      "id": "09a-why-addition",
+      "chapter": 8,
+      "interactive": null
+    },
+    {
+      "id": "10a-takeaway",
+      "chapter": 9,
+      "interactive": null
+    }
+  ]
+}

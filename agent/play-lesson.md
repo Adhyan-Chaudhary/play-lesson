@@ -55,7 +55,20 @@ derived from the audio by `timings` and `manifest`. Never hand-edit
 config exactly. Write for the ear: short sentences, one idea each. A sentence
 past ~25 words gets split somewhere you did not choose.
 
-**`scenes.tsx`** — the film layer. Read these before writing a line of it:
+**`scenes.tsx`** — the film layer.
+
+**Before writing a line of it, read both worked examples**, which ship in the
+package (`examples/` in the repo; alongside `templates/` in an installed copy —
+`npm root -g` finds it). Start with `examples/neural-network/`: six beats, two
+interactives, small enough to hold in your head, and runnable. Then skim
+`examples/positional-embeddings/`, which is the same technique across twenty
+beats and six interactives. `examples/README.md` says what to take from each.
+
+Do not skip this because the rules below seem clear. They are clear and still
+under-determine the visual — the examples are what stop you producing a tidy,
+generic diagram that satisfies every rule and teaches nothing.
+
+The rules:
 
 - **One artefact.** Pick the single object the lesson is about; every beat is a
   *state* of that object — what is written into it, what is lit, who reads it.
@@ -90,6 +103,14 @@ suspect.
 A blank white capture means the page crashed, not that styling is off. The
 built page catches its own errors and prints the stack into `#root`, so the PNG
 will show it — read the image rather than guessing.
+
+## When a lesson needs real maths
+
+Once the artefact needs geometry or a model of the subject, give it its own
+module — `net.ts` in the neural-network example, `stream.tsx` in the other one —
+and have BOTH `scenes.tsx` and `interactives.tsx` import it. One model, two
+views. If the popup simulates the subject separately from the film, the two
+drift and the learner is no longer operating the thing they were shown.
 
 ## Reporting back
 

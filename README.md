@@ -216,6 +216,29 @@ fine from `file://`; only the captions needed inlining.
 
 ---
 
+## Examples
+
+Two worked lessons on unrelated subjects, built with the same technique. Read
+them before authoring your own — the rules under-determine the visual, and these
+are what stop you producing a tidy diagram that teaches nothing.
+
+```bash
+cp -r examples/neural-network my-lesson && cd my-lesson
+play-lesson voice && play-lesson make && play-lesson serve
+```
+
+**`examples/neural-network`** — 6 beats, 2 interactives, runnable in about a
+minute. One 3-4-2 network held across every beat; the film layer and both popups
+share a single `net.ts`, so a weight the learner drags is the weight the film
+draws.
+
+**`examples/positional-embeddings`** — the same pattern at twenty beats and six
+interactives, as proof it does not fall apart when a lesson gets long. Code
+only: no audio or transcript, since the narration is teaching content and the
+reusable part is entirely in the source. Read it, do not run it.
+
+`examples/README.md` says what to take from each, and what not to copy.
+
 ## The agent
 
 `agent/play-lesson.md` is a Claude Code subagent that drives all of this —
