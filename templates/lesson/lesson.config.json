@@ -1,0 +1,27 @@
+{
+  "slug": "__SLUG__",
+  "title": "__TITLE__",
+  "handsOnLabel": "HANDS-ON",
+  "voice": {
+    "provider": "edge",
+    "name": "en-US-AndrewNeural",
+    "rate": "+0%"
+  },
+  "assets": [],
+  "chapters": [
+    { "short": "Opening", "full": "What this lesson is about" },
+    { "short": "The idea", "full": "The core idea, built up" }
+  ],
+  "beats": [
+    { "id": "01a-opening", "chapter": 0, "interactive": null },
+    {
+      "id": "02a-the-idea",
+      "chapter": 1,
+      "interactive": {
+        "kind": "demo",
+        "title": "Try it yourself",
+        "hint": "Drag the control and watch what changes."
+      }
+    }
+  ]
+}

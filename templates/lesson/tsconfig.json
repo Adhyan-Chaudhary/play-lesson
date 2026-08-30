@@ -1,0 +1,22 @@
+{
+  "//": "Editor support only — play-lesson builds with esbuild and does not typecheck. The paths mirror the aliases in src/commands/build.mjs.",
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@play/manifest": ["./.play/manifest.ts"],
+      "@play/scenes": ["./scenes.tsx"],
+      "@play/interactives": ["./interactives.tsx"],
+      "@play/runtime": ["./node_modules/play-lesson/runtime/index.ts"],
+      "@play/theme": ["./node_modules/play-lesson/runtime/theme.ts"]
+    }
+  },
+  "include": ["*.tsx", "*.ts", ".play/*.ts"]
+}

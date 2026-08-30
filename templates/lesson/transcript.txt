@@ -1,0 +1,17 @@
+Draft narration. One `## <beat-id>` per beat, matching lesson.config.json.
+
+Anything above the first heading is preamble and is not spoken.
+
+Write for the ear: short sentences, one idea each. The player shows a caption
+line at a time, so a sentence that runs past about 25 words will be split
+somewhere you did not choose.
+
+## 01a-opening
+
+Replace this with the opening narration.
+
+## 02a-the-idea
+
+Replace this with the narration for the second beat. This beat opens an
+interactive when it finishes, so end on the question the learner is about to
+answer with their hands.

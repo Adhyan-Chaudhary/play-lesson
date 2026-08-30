@@ -1,0 +1,12 @@
+node_modules/
+
+# npm pack output — built on demand, never committed
+*.tgz
+
+# a lesson's generated + measured artefacts, if one is ever kept here
+.play/
+dist/
+stills/
+
+.DS_Store
+*.log
